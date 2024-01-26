@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Math for kids</title>
+
+    <link rel="stylesheet" href="math.css" />
+    <script
+      src="https://kit.fontawesome.com/6fdfe445f0.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+
+  <body>
+    <div id="container">
+      <div class="navbar">
+        <h1>Kid's Maths</h1>
+        <ul>
+          <li class="operation"><span  onclick="addition()">Add</span></li>
+          <li class="operation">
+            <span onclick="subtraction()">Subtract</span>
+          </li>
+          <li class="operation"><span onclick="multiply()">Multiply</span></li>
+          <li class="operation"><span onclick="division()">Divide</span></li>
+        </ul>
+      </div>
+      <div class="hero">
+        <div
+          id="operation-container"
+          style="height: 100%; width: 75%; float: left; margin-right: 5px"
+        >
+          0+0=?
+        </div>
+        <div
+          class="option-container"
+          style="height: 100%; width: 24%; float: left; margin-left: 0"
+        >
+          <div class="option1 options" style="background-color: #ff6f00">0</div>
+          <div
+            class="option2 options"
+            style="background-color: rgb(18, 178, 241)"
+          >
+            0
+          </div>
+          <div class="option3 options" style="background-color: #ba11e0b3">
+            0
+          </div>
+        </div>
+
+        <div id="Correct">
+          <span class="ans" >Correct Answer</span>
+        </div>
+
+        <div id="wrong"><span class="ans">Wrong Answer </span></div>
+
+        <div id="scoreboard"> 
+          <div id="correctans">Correct: 0</div>
+          <div id="wrongans">Wrong: 0</div>
+        </div>
+      </div>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>
